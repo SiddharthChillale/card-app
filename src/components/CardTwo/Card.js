@@ -14,12 +14,6 @@ import CodeIcon from "@mui/icons-material/Code";
 import styles from "./Card.module.scss";
 
 const CardTwo = () => {
-  // const [email, setEmail] = useState("");
-
-  // const handleEmailChange = (e) => {
-  //   setEmail(e.target.value);
-  // };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(`Does nothing sorry`);
