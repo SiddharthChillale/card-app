@@ -1,0 +1,32 @@
+$primary-color: #1976d2;
+$hover-transition: all 0.3s ease;
+$card-padding: 1rem;
+
+.card {
+  border-radius: 8px;
+  transition: $hover-transition;
+  
+  &:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .cardHeader {
+    background-color: lighten($primary-color, 40%);
+    
+    .icon {
+      color: $primary-color;
+    }
+  }
+  
+  .cardContent {
+    padding: $card-padding;
+    min-height: 120px;
+  }
+  
+  .cardActions {
+    padding: $card-padding;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,55 @@
+$secondary-color: #9c27b0;
+$hover-transition: all 0.3s ease;
+$card-padding: 1rem;
+$form-spacing: 1.2rem;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 8px;
+  transition: $hover-transition;
+  
+  &:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .cardHeader {
+    background-color: lighten($secondary-color, 40%);
+    
+    .icon {
+      color: $secondary-color;
+    }
+  }
+  
+  .cardContent {
+    padding: $card-padding;
+    min-height: 120px;
+    
+    .description {
+      margin-bottom: $form-spacing;
+    }
+    
+    .form {
+      margin-top: $form-spacing;
+      
+      .formControl {
+        margin-bottom: 1rem;
+        
+        .input {
+          background-color: rgba(255, 255, 255, 0.9);
+        }
+      }
+    }
+  }
+  
+  .cardActions {
+    padding: $card-padding;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
